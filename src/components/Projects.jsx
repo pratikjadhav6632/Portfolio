@@ -29,24 +29,25 @@ const Projects = () => {
     },
     {
       id: 3,
+      title: 'Portfolio Website',
+      description: 'Responsive portfolio website with smooth animations, contact forms, and modern design.',
+      image: 'https://res.cloudinary.com/dgxzpenl5/image/upload/v1753596459/Screenshot_2025-07-27_113639_bsxinq.png',
+      technologies: ['React', 'Tailwind CSS', 'JavaScript'],
+      category: 'frontend',
+      githubUrl: 'https://github.com',
+      liveUrl: ''
+    },
+    {
+      id: 4,
       title: 'Amazon Clone',
       description: 'Static Amazon clone built using HTML and CSS, replicating homepage layout, product sections, and responsive design.',
       image: 'https://res.cloudinary.com/dgxzpenl5/image/upload/v1753552046/Screenshot_2025-07-26_231713_lilroy.png',
       technologies: ['HTML', 'CSS'],
       category: 'frontend',
       githubUrl: 'https://github.com/pratikjadhav6632/Amazon.com_clone',
-    },
+    }
   
-    {
-      id: 5,
-      title: 'Portfolio Website',
-      description: 'Responsive portfolio website with smooth animations, contact forms, and modern design.',
-      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React', 'Tailwind CSS', 'JavaScript'],
-      category: 'frontend',
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com'
-    },
+    
   ];
 
   const filters = [

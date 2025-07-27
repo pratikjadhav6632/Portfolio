@@ -47,16 +47,6 @@ const Projects = () => {
       githubUrl: 'https://github.com',
       liveUrl: 'https://example.com'
     },
-    {
-      id: 6,
-      title: 'Blog CMS',
-      description: 'Content management system for bloggers with rich text editor, media upload, and SEO optimization.',
-      image: 'https://images.pexels.com/photos/265667/pexels-photo-265667.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
-      category: 'fullstack',
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com'
-    }
   ];
 
   const filters = [

@@ -46,8 +46,6 @@ const Projects = () => {
       category: 'frontend',
       githubUrl: 'https://github.com/pratikjadhav6632/Amazon.com_clone',
     }
-  
-    
   ];
 
   const filters = [

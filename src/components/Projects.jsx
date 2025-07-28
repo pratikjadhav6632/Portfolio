@@ -27,8 +27,17 @@ const Projects = () => {
       liveUrl: 'https://wondernest-zi50.onrender.com/',
       featured: true
     },
-    {
+       {
       id: 3,
+      title: 'Gaplify',
+      description: 'Career development platform for students and freshers with skill gap analysis, personalized roadmaps, mentorship, and resource hub using MERN stack.',
+      image: 'https://res.cloudinary.com/dgxzpenl5/image/upload/v1753712051/Screenshot_2025-07-28_194303_s2uwob.png',
+      technologies: ['MongoDB','Express', 'React.js','Node.js'],
+      category: 'FullStack',
+      githubUrl: 'https://github.com/pratikjadhav6632/Gaplify',
+    },
+    {
+      id: 4,
       title: 'Portfolio Website',
       description: 'Responsive portfolio website with smooth animations, contact forms, and modern design.',
       image: 'https://res.cloudinary.com/dgxzpenl5/image/upload/v1753596459/Screenshot_2025-07-27_113639_bsxinq.png',
@@ -38,14 +47,15 @@ const Projects = () => {
       liveUrl: ''
     },
     {
-      id: 4,
+      id: 5,
       title: 'Amazon Clone',
       description: 'Static Amazon clone built using HTML and CSS, replicating homepage layout, product sections, and responsive design.',
       image: 'https://res.cloudinary.com/dgxzpenl5/image/upload/v1753552046/Screenshot_2025-07-26_231713_lilroy.png',
       technologies: ['HTML', 'CSS'],
       category: 'frontend',
       githubUrl: 'https://github.com/pratikjadhav6632/Amazon.com_clone',
-    }
+    },
+ 
   ];
 
   const filters = [

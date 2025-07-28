@@ -35,6 +35,8 @@ const Projects = () => {
       technologies: ['MongoDB','Express', 'React.js','Node.js'],
       category: 'FullStack',
       githubUrl: 'https://github.com/pratikjadhav6632/Gaplify',
+      Ongoing: true,
+      liveUrl: ''
     },
     {
       id: 4,
@@ -102,6 +104,11 @@ const Projects = () => {
         {project.featured && (
           <div className="absolute top-4 right-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-2 py-1 rounded-full text-xs font-medium">
             Featured
+          </div>
+        )}
+          {project.Ongoing && (
+          <div className="absolute top-4 right-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-2 py-1 rounded-full text-xs font-medium">
+            Ongoing
           </div>
         )}
       </div>

@@ -31,7 +31,7 @@ const Projects = () => {
       id: 3,
       title: 'Gaplify',
       description: 'Career development platform for students and freshers with skill gap analysis, personalized roadmaps, mentorship, and resource hub using MERN stack.',
-      image: 'https://res.cloudinary.com/dgxzpenl5/image/upload/v1753712051/Screenshot_2025-07-28_194303_s2uwob.png',
+      image: 'https://res.cloudinary.com/dgxzpenl5/image/upload/v1753988400/Screenshot_2025-08-01_002909_zykpoa.png',
       technologies: ['MongoDB','Express', 'React.js','Node.js'],
       category: 'FullStack',
       githubUrl: 'https://github.com/pratikjadhav6632/Gaplify',

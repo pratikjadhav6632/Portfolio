@@ -9,13 +9,13 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-gray-900 dark:bg-black text-white transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <Code2 className="h-8 w-8 text-blue-400" />
+              <Code2 className="h-8 w-8 text-indigo-400 dark:text-yellow-500 transition-colors duration-300" />
               <span className="text-xl font-bold">Pratik Jadhav</span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
@@ -26,7 +26,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-4 text-white">Quick Links</h3>
             <ul className="space-y-2">
               {['Home', 'About', 'Skills', 'Projects', 'Contact'].map((item) => (
                 <li key={item}>
@@ -37,7 +37,7 @@ const Footer = () => {
                         element.scrollIntoView({ behavior: 'smooth' });
                       }
                     }}
-                    className="text-gray-400 hover:text-white transition-colors text-sm"
+                    className="text-gray-400 hover:text-white dark:hover:text-yellow-500 transition-colors text-sm"
                   >
                     {item}
                   </button>
@@ -48,7 +48,7 @@ const Footer = () => {
 
           {/* Technologies */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Technologies</h3>
+            <h3 className="text-lg font-semibold mb-4 text-white">Technologies</h3>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>React & JavaScript</li>
               <li>Node.js & Express</li>
@@ -60,11 +60,11 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Get In Touch</h3>
+            <h3 className="text-lg font-semibold mb-4 text-white">Get In Touch</h3>
             <div className="space-y-3">
               <a
                 href="mailto:alex@example.com"
-                className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors text-sm"
+                className="flex items-center space-x-2 text-gray-400 hover:text-white dark:hover:text-yellow-500 transition-colors text-sm"
               >
                 <Mail className="h-4 w-4" />
                 <span>pratikjadhav6632@gmail.com</span>
@@ -74,7 +74,7 @@ const Footer = () => {
                   href="https://github.com/pratikjadhav6632"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="text-gray-400 hover:text-white dark:hover:text-yellow-500 transition-colors"
                 >
                   <Github className="h-5 w-5" />
                 </a>
@@ -82,13 +82,13 @@ const Footer = () => {
                   href="https://www.linkedin.com/in/pratik-jadhav--/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="text-gray-400 hover:text-white dark:hover:text-yellow-500 transition-colors"
                 >
                   <Linkedin className="h-5 w-5" />
                 </a>
                 <a
                   href="mailto:pratikjadhav6632@gmail.com"
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="text-gray-400 hover:text-white dark:hover:text-yellow-500 transition-colors"
                 >
                   <Mail className="h-5 w-5" />
                 </a>
@@ -106,7 +106,7 @@ const Footer = () => {
             </p>
             <button
               onClick={scrollToTop}
-              className="text-gray-400 hover:text-white transition-colors text-sm"
+              className="text-gray-400 hover:text-white dark:hover:text-yellow-500 transition-colors text-sm"
             >
               Back to top ↑
             </button>

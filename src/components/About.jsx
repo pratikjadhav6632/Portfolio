@@ -1,9 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { useTheme } from '../context/ThemeContext';
 import { Code, Database, Server, Smartphone, Award, Users, Coffee, Zap } from 'lucide-react';
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
+  const { theme } = useTheme();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -27,25 +29,25 @@ const About = () => {
       icon: Code,
       title: 'Frontend Development',
       description: 'Creating responsive and interactive user interfaces with React, JavaScript, and modern CSS frameworks.',
-      color: 'from-blue-500 to-cyan-500'
+      color: 'bg-indigo-600'
     },
     {
       icon: Server,
       title: 'Backend Development',
       description: 'Building robust server-side applications with Node.js, Express, and RESTful API development.',
-      color: 'from-green-500 to-emerald-500'
+      color: 'bg-emerald-600'
     },
     {
       icon: Database,
       title: 'Database Design',
       description: 'Designing and optimizing MongoDB databases for scalable and efficient data management.',
-      color: 'from-purple-500 to-violet-500'
+      color: 'bg-purple-600'
     },
     {
       icon: Smartphone,
       title: 'Mobile-First Design',
       description: 'Developing responsive applications that work seamlessly across all devices and screen sizes.',
-      color: 'from-pink-500 to-rose-500'
+      color: 'bg-rose-500'
     }
   ];
 
@@ -57,24 +59,24 @@ const About = () => {
   ];
 
   return (
-    <section id="about" ref={sectionRef} className="py-20 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">
+    <section id="about" ref={sectionRef} className="py-20 bg-white dark:bg-gray-950 relative overflow-hidden transition-colors duration-300">
       {/* Background decoration */}
-      <div className="absolute inset-0">
-        <div className="absolute top-10 right-10 w-64 h-64 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse"></div>
-        <div className="absolute bottom-10 left-10 w-64 h-64 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse delay-1000"></div>
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-10 right-10 w-64 h-64 bg-indigo-50 dark:bg-yellow-900/10 rounded-full blur-3xl opacity-60 transition-colors duration-300"></div>
+        <div className="absolute bottom-10 left-10 w-64 h-64 bg-blue-50 dark:bg-yellow-900/10 rounded-full blur-3xl opacity-60 transition-colors duration-300"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <h2 className={`text-4xl md:text-5xl font-bold text-gray-900 mb-4 transition-all duration-1000 ${
+          <h2 className={`text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4 transition-all duration-1000 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}>
             About Me
           </h2>
-          <div className={`w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full transition-all duration-1000 delay-200 ${
+          <div className={`w-24 h-1 bg-indigo-600 dark:bg-yellow-500 mx-auto rounded-full transition-all duration-1000 delay-200 ${
             isVisible ? 'opacity-100 scale-x-100' : 'opacity-0 scale-x-0'
           }`}></div>
-          <p className={`text-gray-600 mt-6 max-w-3xl mx-auto text-lg transition-all duration-1000 delay-300 ${
+          <p className={`text-gray-600 dark:text-gray-400 mt-6 max-w-3xl mx-auto text-lg transition-all duration-1000 delay-300 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}>
             Passionate about creating digital experiences that make a difference
@@ -88,16 +90,18 @@ const About = () => {
             return (
               <div
                 key={index}
-                className={`text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 ${
+                className={`text-center p-6 bg-white dark:bg-gray-900 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 ${
                   isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                 }`}
                 style={{ transitionDelay: `${400 + index * 100}ms` }}
               >
-                <div className={`inline-flex items-center justify-center w-12 h-12 rounded-full bg-gray-100 mb-4 ${stat.color}`}>
-                  <IconComponent className="h-6 w-6" />
+                <div className={`inline-flex items-center justify-center w-12 h-12 rounded-full bg-gray-100 dark:bg-gray-800 mb-4 ${stat.color} dark:${stat.color === 'text-purple-600' ? 'text-yellow-400' : 'text-yellow-500'}`}>
+                  {/* Note: Specific stat colors might need manual override for pure yellow theme, but keeping slightly varied accents is usually better. 
+                      Let's stick to theme request "Yellow" accents. */}
+                  <IconComponent className={`h-6 w-6 ${theme === 'dark' ? 'text-yellow-500' : ''}`} />
                 </div>
-                <div className="text-3xl font-bold text-gray-900 mb-1">{stat.number}</div>
-                <div className="text-gray-600 text-sm font-medium">{stat.label}</div>
+                <div className="text-3xl font-bold text-gray-900 dark:text-white mb-1">{stat.number}</div>
+                <div className="text-gray-600 dark:text-gray-400 text-sm font-medium">{stat.label}</div>
               </div>
             );
           })}
@@ -109,10 +113,10 @@ const About = () => {
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
           }`}>
             <div className="space-y-6">
-              <h3 className="text-3xl font-bold text-gray-900 leading-tight">
-                Passionate <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Fullstack Developer</span>
+              <h3 className="text-3xl font-bold text-gray-900 dark:text-white leading-tight transition-colors duration-300">
+                Passionate <span className="text-indigo-600 dark:text-yellow-500 transition-colors duration-300">Fullstack Developer</span>
               </h3>
-              <div className="space-y-4 text-gray-600 leading-relaxed">
+              <div className="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed transition-colors duration-300">
                 <p>
                   With over 1 year of experience in web development, I specialize in creating 
                   end-to-end web applications using the MERN stack. My journey began with a 
@@ -129,7 +133,7 @@ const About = () => {
             </div>
 
             <div className="space-y-4">
-              <h4 className="text-xl font-semibold text-gray-900">What drives me:</h4>
+              <h4 className="text-xl font-semibold text-gray-900 dark:text-white transition-colors duration-300">What drives me:</h4>
               <div className="space-y-3">
                 {[
                   'Creating seamless user experiences',
@@ -138,8 +142,8 @@ const About = () => {
                   'Collaborating with amazing teams'
                 ].map((item, index) => (
                   <div key={index} className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full"></div>
-                    <span className="text-gray-700">{item}</span>
+                    <div className="w-2 h-2 bg-indigo-600 dark:bg-yellow-500 rounded-full transition-colors duration-300"></div>
+                    <span className="text-gray-700 dark:text-gray-300 transition-colors duration-300">{item}</span>
                   </div>
                 ))}
               </div>
@@ -155,20 +159,20 @@ const About = () => {
               return (
                 <div
                   key={index}
-                  className="group p-6 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 cursor-pointer"
+                  className="group p-6 bg-white dark:bg-gray-900 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 cursor-pointer"
                   style={{ transitionDelay: `${800 + index * 100}ms` }}
                 >
-                  <div className={`w-14 h-14 bg-gradient-to-r ${feature.color} rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                    <IconComponent className="h-7 w-7 text-white" />
+                  <div className={`w-14 h-14 ${feature.color} dark:bg-yellow-500 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                    <IconComponent className="h-7 w-7 text-white dark:text-gray-900" />
                   </div>
-                  <h4 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
+                  <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-3 group-hover:text-indigo-600 dark:group-hover:text-yellow-500 transition-colors">
                     {feature.title}
                   </h4>
-                  <p className="text-gray-600 text-sm leading-relaxed">
+                  <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
                     {feature.description}
                   </p>
                   <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <Zap className="h-4 w-4 text-blue-600" />
+                    <Zap className="h-4 w-4 text-indigo-600 dark:text-yellow-500" />
                   </div>
                 </div>
               );

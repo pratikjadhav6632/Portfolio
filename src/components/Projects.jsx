@@ -14,7 +14,7 @@ const Projects = () => {
       category: 'FullStack',
       githubUrl: 'https://github.com/pratikjadhav6632/Gaplify',
       featured: true,
-      liveUrl: 'wwww.gaplify.in'
+      liveUrl: 'https://www.gaplify.in'
     },
     {
       id: 2,

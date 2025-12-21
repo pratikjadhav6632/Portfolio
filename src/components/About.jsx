@@ -52,10 +52,10 @@ const About = () => {
   ];
 
   const stats = [
-    { icon: Award, number: '1+', label: 'Years Experience', color: 'text-blue-600' },
-    { icon: Code, number: '5+', label: 'Projects Completed', color: 'text-green-600' },
-    { icon: Users, number: '2+', label: 'Happy Clients', color: 'text-purple-600' },
-    { icon: Coffee, number: '200+', label: 'Cups of Coffee', color: 'text-orange-600' }
+    { icon: Award, number: '1.5+', label: 'Years Experience', color: 'text-blue-600' },
+    { icon: Code, number: '8+', label: 'Projects Completed', color: 'text-green-600' },
+    { icon: Users, number: '3+', label: 'Happy Clients', color: 'text-purple-600' },
+    { icon: Coffee, number: '250+', label: 'Cups of Coffee', color: 'text-orange-600' }
   ];
 
   return (
@@ -118,7 +118,7 @@ const About = () => {
               </h3>
               <div className="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed transition-colors duration-300">
                 <p>
-                  With over 1 year of experience in web development, I specialize in creating 
+                  With over 1.5+ year of experience in web development and mobile application development, I specialize in creating 
                   end-to-end web applications using the MERN stack. My journey began with a 
                   fascination for how things work on the web, and it has evolved into a deep 
                   passion for crafting digital experiences.

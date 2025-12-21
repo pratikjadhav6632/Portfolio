@@ -120,7 +120,7 @@ const Hero = () => {
               <Mail className="h-6 w-6" />
             </a>
             <button className="text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-yellow-500 transform hover:scale-110 transition-all duration-200 flex items-center gap-1">
-              <a href="https://drive.google.com/file/d/1EG_FGaJfjDFRqfItSkwWmdNpPa3WmrZU/view?usp=sharing" download className="underline">
+              <a href="https://drive.google.com/file/d/1dX5VhmMqpLuSjSiU8bOaRzN855miDd5g/view?usp=sharing" download className="underline">
               <Download className="h-6 w-6" />
               </a>
             </button>

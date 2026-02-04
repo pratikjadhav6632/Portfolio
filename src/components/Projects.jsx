@@ -31,7 +31,7 @@ const Projects = () => {
       id: 3,
       title: 'Foundrr Mobile Application',
       description: 'Foundrr is a streamlined platform designed to help users discover, track, and manage opportunities with ease. The app delivers a clean interface, fast navigation, and smart features to enhance productivity and support growth.”',
-      image: 'https://res.cloudinary.com/dgxzpenl5/image/upload/v1766330686/Screenshot_2025-12-21_205056_m9wahg.png',
+      image: 'https://res.cloudinary.com/dgxzpenl5/image/upload/v1770179584/Screenshot_2026-02-04_100037_zpixoh.png',
       technologies: ['React Native', 'CSS','Tailwind CSS','node.js','expo','express.js','mongodb'],
       category: 'Mobile Application',
       githubUrl: 'https://github.com/pratikjadhav6632/Foundrr_Applciation',
@@ -51,6 +51,17 @@ const Projects = () => {
     },
     {
       id: 5,
+      title: 'SMB Rise Digital Portfolio',
+      description: 'A responsive portfolio website for SMB Rise Digital (Ireland) showcasing their services, Blogs, and contact information, Admin panel for tracking and adding new blogs',
+      image: 'https://res.cloudinary.com/dgxzpenl5/image/upload/v1770179918/Screenshot_2026-02-04_100820_qh5afu.png',
+      technologies: ['Next.js', 'CSS','Tailwind CSS','MongoDB','node.js','Express.js','SEO'],
+      category: 'Fullstack',
+      githubUrl: 'https://github.com/pratikjadhav6632/SMB-media',
+      liveUrl: 'https://smb-media.vercel.app/',
+      Ongoing: true
+    },
+    {
+      id: 6,
       title: 'Foundrr',
       description: 'Full-stack networking platform for entrepreneurs with real-time chat, co-founder matching, user authentication, and Appwrite backend integration.',
       image: 'https://res.cloudinary.com/dgxzpenl5/image/upload/v1753551335/Screenshot_2025-07-26_230313_ji4vn3.png',
@@ -61,7 +72,7 @@ const Projects = () => {
      
     },
     {
-      id: 6,
+      id: 7,
       title: 'WonderNest',
       description: 'Full-stack hotel and room listing platform with CRUD operations, user reviews, and dynamic property viewing.',
       image: 'https://res.cloudinary.com/dgxzpenl5/image/upload/v1753551851/Screenshot_2025-07-26_231352_ppuck9.png',
@@ -73,7 +84,7 @@ const Projects = () => {
     },
     
     {
-      id: 7,
+      id: 8,
       title: 'Portfolio Website',
       description: 'Responsive portfolio website with smooth animations, contact forms, and modern design.',
       image: 'https://res.cloudinary.com/dgxzpenl5/image/upload/v1766330686/Screenshot_2025-12-21_205136_kkxerp.png',
@@ -83,7 +94,7 @@ const Projects = () => {
       liveUrl: 'https://pratik-jadhav-portfolio.netlify.app/'
     },
     {
-      id: 8,
+      id: 9,
       title: 'Foundrr Waiting List',
       description: 'Foundrr offers a clean, interactive way for users to join the waiting list through a simple form. Built with React and Tailwind, it delivers a smooth and modern experience.',
       image: 'https://res.cloudinary.com/dgxzpenl5/image/upload/v1766330687/Screenshot_2025-12-21_205410_mrvsu4.png',

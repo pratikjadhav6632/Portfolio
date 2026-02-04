@@ -62,7 +62,7 @@ const Projects = () => {
     },
     {
       id: 6,
-      title: 'Foundrr',
+      title: 'Foundrr MVP',
       description: 'Full-stack networking platform for entrepreneurs with real-time chat, co-founder matching, user authentication, and Appwrite backend integration.',
       image: 'https://res.cloudinary.com/dgxzpenl5/image/upload/v1753551335/Screenshot_2025-07-26_230313_ji4vn3.png',
       technologies: ['React', 'Typescript', 'Appwrite', 'Tailwind CSS'],

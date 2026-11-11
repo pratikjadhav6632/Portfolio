@@ -3,22 +3,340 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pratik Jadhav</title>
-    <meta name="description" content="Portfolio website of Pratik Jadhav, showcasing projects, skills, and contact information." />
-    <meta name="keywords" content="Pratik Jadhav, portfolio, web developer, projects, skills, contact" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Pratik Jadhav" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Pratik Jadhav | Software Developer (MERN Stack &amp; React Native) — Full-Time &amp; Freelance</title>
+    <meta
+      name="description"
+      content="Pratik Jadhav — Software Developer in Pune with 1.5+ years of production experience building MERN stack web apps, multi-tenant SaaS platforms (38+ orgs, 84% Redis latency drop), and React Native Android apps. Open to full-time SDE/Full-Stack roles and freelance product builds."
+    />
+    <meta
+      name="keywords"
+      content="Pratik Jadhav, Software Developer Pune, Hire MERN Stack Developer, Freelance Full-Stack Developer India, React Native Developer, SaaS MVP Developer, Node.js Developer, MongoDB, Redis, System Design, PhonePe Payment Gateway Node.js, QuirGO, Gaplify, Foundrr"
+    />
     <meta name="author" content="Pratik Jadhav" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="theme-color" content="#0d0f0c" />
+
+    <link rel="canonical" href="https://pratik-jadhav-portfolio.netlify.app/" />
+    <link rel="alternate" type="text/plain" title="LLMs Context" href="/llms.txt" />
+
+    <!-- Google Fonts: Newsreader, Lora, Instrument Serif, Plus Jakarta Sans, JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..800;1,6..72,300..800&family=Lora:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="Pratik Jadhav Portfolio" />
-    <meta property="og:description" content="Explore the portfolio of Pratik Jadhav, web developer and designer." />
-    <meta property="og:image" content="/og-image.png" />
+    <meta property="og:site_name" content="Pratik Jadhav" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:title" content="Pratik Jadhav | Software Developer (MERN &amp; React Native) — Full-Time &amp; Freelance" />
+    <meta
+      property="og:description"
+      content="Software Developer with 1.5+ years of experience shipping SaaS platforms (QuirGO — 38 orgs, 84% Redis speedup), EdTech (Gaplify — 115+ students), and React Native apps (Foundrr). Open for hire &amp; freelance builds."
+    />
+    <meta property="og:image" content="https://pratik-jadhav-portfolio.netlify.app/og-cover.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Pratik Jadhav — Software Developer (MERN Stack &amp; React Native), 1.5+ Years Experience, Open to Full-Time Roles &amp; Freelance Projects" />
     <meta property="og:url" content="https://pratik-jadhav-portfolio.netlify.app/" />
     <meta property="og:type" content="website" />
+
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Pratik Jadhav Portfolio" />
-    <meta name="twitter:description" content="Explore the portfolio of Pratik Jadhav, web developer and designer." />
-    <meta name="twitter:image" content="/og-image.png" />
+    <meta name="twitter:title" content="Pratik Jadhav | Software Developer (MERN &amp; React Native) — Full-Time &amp; Freelance" />
+    <meta
+      name="twitter:description"
+      content="Software Developer (1.5+ yrs) building scalable MERN SaaS, React Native apps, and high-speed Node.js backends. Open to full-time roles &amp; freelance clients."
+    />
+    <meta name="twitter:image" content="https://pratik-jadhav-portfolio.netlify.app/og-cover.jpg" />
+    <meta name="twitter:image:alt" content="Pratik Jadhav — Software Developer Portfolio Cover" />
+
+    <!-- Structured Data: Person, WebSite & Blog Graph (Technical SEO / AEO / GEO) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://pratik-jadhav-portfolio.netlify.app/#person",
+            "name": "Pratik Jadhav",
+            "alternateName": "Pratik Dattatray Jadhav",
+            "url": "https://pratik-jadhav-portfolio.netlify.app/",
+            "image": "https://pratik-jadhav-portfolio.netlify.app/profile.jpg",
+            "jobTitle": "Software Developer (MERN Stack & React Native)",
+            "description": "Software Developer in Pune with 1.5+ years of production experience building MERN stack web apps, multi-tenant SaaS platforms, and React Native Android apps. Open to full-time SDE roles and freelance product builds.",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "SSWW"
+            },
+            "award": "Avishkar Bharat Gold Medal & Special Achievement Trophy",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Pune",
+              "addressRegion": "Maharashtra",
+              "addressCountry": "IN"
+            },
+            "email": "mailto:pratikjadhav6632@gmail.com",
+            "telephone": "+91-8408868107",
+            "knowsAbout": [
+              "MERN Stack",
+              "React.js",
+              "Next.js",
+              "Node.js",
+              "Express.js",
+              "MongoDB",
+              "PostgreSQL",
+              "Redis",
+              "System Design",
+              "React Native",
+              "Expo",
+              "Payment Gateway Integration",
+              "Multi-Tenant SaaS Architecture",
+              "REST APIs",
+              "Tailwind CSS",
+              "OpenAI API"
+            ],
+            "sameAs": [
+              "https://www.linkedin.com/in/jadhavpratik-/",
+              "https://github.com/pratikjadhav6632",
+              "https://medium.com/@pratikjadhav6632",
+              "https://www.gaplify.in"
+            ]
+          },
+          {
+            "@type": "ProfessionalService",
+            "@id": "https://pratik-jadhav-portfolio.netlify.app/#service",
+            "name": "Pratik Jadhav — Freelance Software & SaaS Development",
+            "url": "https://pratik-jadhav-portfolio.netlify.app/",
+            "image": "https://pratik-jadhav-portfolio.netlify.app/og-cover.jpg",
+            "provider": {
+              "@id": "https://pratik-jadhav-portfolio.netlify.app/#person"
+            },
+            "areaServed": ["IN", "Worldwide"],
+            "telephone": "+91-8408868107",
+            "email": "mailto:pratikjadhav6632@gmail.com",
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Engineering & Freelance Services",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Full-Stack MERN & Next.js Web Development",
+                    "description": "End-to-end production web applications, dashboards, and internal tools built with React.js, Next.js, Node.js, Express, and MongoDB."
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Multi-Tenant SaaS MVP Architecture",
+                    "description": "Scalable SaaS platforms with role-based access, HRM/CRM/Finance workflows, and high-reliability REST APIs."
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "React Native & Expo Mobile App Development",
+                    "description": "Production Android mobile apps with smooth UI, native integrations, and Node.js backends."
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Backend Performance & Redis Caching Optimization",
+                    "description": "API profiling, database indexing, and Redis caching layers to drastically cut response times."
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Payment Gateway Integration (PhonePe & Webhooks)",
+                    "description": "Secure, idempotent payment workflows and webhook verification for Node.js backends."
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "@type": "ItemList",
+            "@id": "https://pratik-jadhav-portfolio.netlify.app/#projects",
+            "name": "Selected Software Projects by Pratik Jadhav",
+            "numberOfItems": 9,
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                  "@type": "WebApplication",
+                  "name": "Gaplify",
+                  "url": "https://www.gaplify.in",
+                  "applicationCategory": "EducationalApplication",
+                  "operatingSystem": "Web",
+                  "description": "Live EdTech mentorship platform connecting 115+ students with 10+ mentors using React.js, Node.js, Express, and MongoDB."
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                  "@type": "SoftwareApplication",
+                  "name": "MIRA",
+                  "applicationCategory": "UtilitiesApplication",
+                  "description": "Personal AI companion exploring conversational intelligence, chat and voice interactions, and persistent contextual memory using OpenAI API, Node.js, React, Embeddings, Vector Databases, and AI Systems."
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                  "@type": "WebApplication",
+                  "name": "QuirGO",
+                  "url": "https://quirgo.com",
+                  "applicationCategory": "BusinessApplication",
+                  "operatingSystem": "Web",
+                  "description": "All-in-One multi-tenant SaaS suite (HRM, CRM, Finance, Project Management) serving 38 organizations with ~84% Redis API latency reduction (5s to 790ms)."
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "item": {
+                  "@type": "WebApplication",
+                  "name": "WonderNest",
+                  "applicationCategory": "TravelApplication",
+                  "operatingSystem": "Web",
+                  "description": "Hotel discovery and booking web application built with Node.js, Express.js, MongoDB, and EJS."
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 5,
+                "item": {
+                  "@type": "MobileApplication",
+                  "name": "Foundrr",
+                  "url": "https://www.foundrr.co/",
+                  "applicationCategory": "BusinessApplication",
+                  "operatingSystem": "Android",
+                  "description": "Startup networking Android application built with React Native, Expo, Node.js, Express.js, and MongoDB."
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 6,
+                "item": {
+                  "@type": "WebSite",
+                  "name": "Jotiba Constructions",
+                  "description": "Responsive business website crafted for Jotiba Constructions."
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 7,
+                "item": {
+                  "@type": "WebApplication",
+                  "name": "CollegeSphere",
+                  "applicationCategory": "BusinessApplication",
+                  "operatingSystem": "Web",
+                  "description": "Internal full-stack workflow automation software built for NMiet LC."
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 8,
+                "item": {
+                  "@type": "WebApplication",
+                  "name": "QuantumITGurus",
+                  "applicationCategory": "BusinessApplication",
+                  "operatingSystem": "Web",
+                  "description": "Client business website and custom CRM lead management system."
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 9,
+                "item": {
+                  "@type": "WebSite",
+                  "name": "Oshni",
+                  "description": "Product showcase website for traditional Siddha wellness products."
+                }
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://pratik-jadhav-portfolio.netlify.app/#website",
+            "url": "https://pratik-jadhav-portfolio.netlify.app/",
+            "name": "Pratik Jadhav — Portfolio & Engineering Blog",
+            "publisher": { "@id": "https://pratik-jadhav-portfolio.netlify.app/#person" },
+            "inLanguage": "en"
+          },
+          {
+            "@type": "Blog",
+            "@id": "https://pratik-jadhav-portfolio.netlify.app/blog",
+            "url": "https://pratik-jadhav-portfolio.netlify.app/blog",
+            "name": "Pratik Jadhav Engineering Blog",
+            "description": "Engineering articles on System Design, Node.js PhonePe payment integration, SaaS product mistakes, and lessons from building startups.",
+            "author": { "@id": "https://pratik-jadhav-portfolio.netlify.app/#person" },
+            "blogPost": [
+              {
+                "@type": "BlogPosting",
+                "headline": "System Design 101: 14 Core Components Every Developer Should Understand",
+                "url": "https://pratik-jadhav-portfolio.netlify.app/blog/system-design-101-14-core-components",
+                "sameAs": "https://medium.com/@pratikjadhav6632/system-design-101-14-core-components-every-developer-should-understand-e54f5730086a",
+                "author": { "@id": "https://pratik-jadhav-portfolio.netlify.app/#person" }
+              },
+              {
+                "@type": "BlogPosting",
+                "headline": "PhonePe Payment Gateway Integration with Node.js: A Beginner's Complete Guide (2025)",
+                "url": "https://pratik-jadhav-portfolio.netlify.app/blog/phonepe-payment-gateway-nodejs-guide",
+                "sameAs": "https://medium.com/@pratikjadhav6632/phonepe-payment-gateway-integration-with-node-js-a-beginners-complete-guide-2025-cfcb4a08116d",
+                "author": { "@id": "https://pratik-jadhav-portfolio.netlify.app/#person" }
+              },
+              {
+                "@type": "BlogPosting",
+                "headline": "I Tried to Buy a Product on Flipkart. Instead, I Learned About System Design.",
+                "url": "https://pratik-jadhav-portfolio.netlify.app/blog/flipkart-system-design-lessons",
+                "sameAs": "https://medium.com/@pratikjadhav6632/i-tried-to-buy-a-product-on-flipkart-instead-i-learned-about-system-design-7ca26e270310",
+                "author": { "@id": "https://pratik-jadhav-portfolio.netlify.app/#person" }
+              },
+              {
+                "@type": "BlogPosting",
+                "headline": "Every Mistake I Made Building SaaS (And What Tony Stark Taught Me About It)",
+                "url": "https://pratik-jadhav-portfolio.netlify.app/blog/every-mistake-building-saas-tony-stark",
+                "sameAs": "https://medium.com/@pratikjadhav6632/every-mistake-i-made-building-saas-and-what-tony-stark-taught-me-about-it-b3ec63bc8207",
+                "author": { "@id": "https://pratik-jadhav-portfolio.netlify.app/#person" }
+              },
+              {
+                "@type": "BlogPosting",
+                "headline": "I'm a Developer With 1.5 Years of Experience. Here's What I Actually Know.",
+                "url": "https://pratik-jadhav-portfolio.netlify.app/blog/developer-with-1-5-years-of-experience",
+                "sameAs": "https://medium.com/@pratikjadhav6632/im-a-developer-with-1-5-years-of-experience-here-s-what-i-actually-know-67b41f889929",
+                "author": { "@id": "https://pratik-jadhav-portfolio.netlify.app/#person" }
+              },
+              {
+                "@type": "BlogPosting",
+                "headline": "What I Learned About Honesty in My First Startup Job (And Why It Matters More Than Your Skills)",
+                "url": "https://pratik-jadhav-portfolio.netlify.app/blog/honesty-in-first-startup-job",
+                "sameAs": "https://medium.com/@pratikjadhav6632/what-i-learned-about-honesty-in-my-first-startup-job-and-why-it-matters-more-than-your-skills-c992057a4b14",
+                "author": { "@id": "https://pratik-jadhav-portfolio.netlify.app/#person" }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

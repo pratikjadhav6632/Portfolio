@@ -1,116 +1,200 @@
 import React from 'react';
 
 const Skills = () => {
-  const frontendRow1 = [
-    { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg' },
-    { name: 'Next.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg' },
-    { name: 'TypeScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg' },
-    { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg' },
-    { name: 'Redux', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg' },
-  ];
-
-  const frontendRow2 = [
-    { name: 'Tailwind CSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg' },
-    { name: 'HTML5', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg' },
-    { name: 'CSS3', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg' },
-    { name: 'Material UI', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materialui/materialui-original.svg' },
-    { name: 'Framer Motion', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/framermotion/framermotion-original.svg' },
-  ];
-
-  const backendRow1 = [
-    { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg' },
-    { name: 'Express', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg' },
-    { name: 'MongoDB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg' },
-    { name: 'PostgreSQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg' },
-    { name: 'Firebase', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg' },
-  ];
-
-  const backendRow2 = [
-    { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg' },
-    {name:'GitHub',icon:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg'},
-    { name: 'Postman', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg' },
-    { name: 'Linux', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg' },
-    {name:'vercel',icon:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg'},
-    {name:'Netlify',icon:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg',
-    },
-    {name:'render',icon:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/render/render-original.svg'}
-  ];
-
-  const SkillCard = ({ name, icon }) => (
-    <div className="flex items-center space-x-3 dark:bg-white bg-gray-50/50 dark:bg-gray-900/50 px-6 py-3 rounded-xl border border-gray-100 dark:border-gray-800 mx-3 min-w-max hover:bg-white dark:hover:bg-gray-900 hover:shadow-md hover:border-gray-200 dark:hover:border-gray-700 transition-all duration-300">
-      <img src={icon} alt={name} className="h-6 w-6 object-contain" />
-      <span className="text-gray-700 dark:text-gray-600 font-medium text-base">{name}</span>
-    </div>
-  );
-
   return (
-    <section id="skills" className="py-24 bg-white dark:bg-gray-950 relative overflow-hidden transition-colors duration-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
-        <div className="text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 transition-colors duration-300">
-            Skills & <span className="text-indigo-600 dark:text-yellow-500 transition-colors duration-300">Technologies</span>
-          </h2>
-          <div className="w-24 h-1.5 bg-indigo-600 dark:bg-yellow-500 mx-auto rounded-full mb-6 transition-colors duration-300"></div>
-          <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed transition-colors duration-300">
-            Crafting responsive, robust, and scalable applications with a modern tech stack.
+    <section
+      id="skills"
+      className="py-24 sm:py-32 lg:py-36 bg-[#d4ff32] text-[#11130e] relative overflow-hidden selection:bg-[#11130e] selection:text-[#d4ff32]"
+    >
+      <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-14 relative z-10">
+
+        {/* Section Header */}
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between pb-16 sm:pb-20 lg:pb-24 gap-8">
+          <div>
+            <div className="flex items-center gap-3 text-xs font-mono tracking-widest uppercase mb-6 sm:mb-8 select-none">
+              <span className="text-[#36420c] font-bold">04</span>
+              <span className="text-[#45530f] font-semibold">WORKING STACK</span>
+              <span>·</span>
+              <span className="bg-[#11130e] text-[#d4ff32] font-black px-2.5 py-0.5 rounded-full text-[10.5px]">
+                MERN STACK CORE
+              </span>
+            </div>
+
+            <h2 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[80px] xl:text-[88px] font-normal leading-[0.88] tracking-[-0.035em] text-[#11130e] select-none [font-optical-sizing:auto]">
+              Broad enough to own
+              it. <br />
+              <span className="italic text-[#882412]">Focused enough to </span> <br />
+              <span className="italic text-[#882412]">ship it.</span>
+            </h2>
+          </div>
+
+          <p className="font-sans text-xs sm:text-sm lg:text-[15px] text-[#36420c] leading-relaxed max-w-sm lg:pb-3">
+            Specializing in the full MERN Stack (MongoDB, Express, React, Node.js) and React Native—connecting high-performing interfaces with reliable, scalable backends.
           </p>
         </div>
-      </div>
 
-      <div className="flex flex-col space-y-12 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Gradient Masks */}
-        <div className="absolute inset-y-0 left-0 w-20 md:w-40 bg-gradient-to-r from-white dark:from-gray-950 to-transparent z-10 pointer-events-none transition-colors duration-300"></div>
-        <div className="absolute inset-y-0 right-0 w-20 md:w-40 bg-gradient-to-l from-white dark:from-gray-950 to-transparent z-10 pointer-events-none transition-colors duration-300"></div>
+        {/* 2x2 Grid of Feature Cards */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
 
-        {/* Frontend Section */}
-        <div className="flex flex-col space-y-4">
-          <div className="px-4 md:px-8 text-gray-900 dark:text-white font-bold text-lg tracking-wide uppercase mb-2 text-center md:text-left transition-colors duration-300">
-            Frontend
-          </div>
-          
-          {/* Frontend Row 1 - Left */}
-          <div className="relative w-full overflow-hidden pause-hover py-2">
-            <div className="flex w-max animate-scroll">
-              {[...frontendRow1, ...frontendRow1, ...frontendRow1, ...frontendRow1].map((skill, index) => (
-                <SkillCard key={`f1-${index}`} name={skill.name} icon={skill.icon} />
+          {/* Card 01: Mobile (Dark Charcoal) */}
+          <div className="rounded-[2.5rem] bg-[#141712] text-white p-8 sm:p-10 lg:p-12 relative overflow-hidden flex flex-col justify-between shadow-xl min-h-[400px] sm:min-h-[440px] group transition-all duration-300 hover:shadow-2xl">
+            {/* Top-Right Sonar / Radar Watermark Graphic with Lime Dot */}
+            <div className="absolute -top-16 -right-16 w-72 h-72 rounded-full border border-[#d4ff32]/[0.08] pointer-events-none" />
+            <div className="absolute -top-6 -right-6 w-52 h-52 rounded-full border border-[#d4ff32]/[0.12] pointer-events-none" />
+            <div className="absolute top-4 right-4 w-32 h-32 rounded-full border border-[#d4ff32]/[0.18] flex items-center justify-center pointer-events-none">
+              <div className="w-3 h-3 rounded-full bg-[#d4ff32] shadow-[0_0_12px_#d4ff32]" />
+            </div>
+
+            <div>
+              <div className="text-xs font-mono tracking-widest text-[#7f8677] uppercase mb-4 select-none">
+                01 / MOBILE
+              </div>
+
+              <h3 className="font-serif text-4xl sm:text-5xl text-white font-normal leading-[1.05] tracking-tight mb-4">
+                Cross-platform apps
+              </h3>
+
+              <p className="font-sans text-xs sm:text-sm text-[#9aa090] leading-relaxed mb-8 max-w-md">
+                React Native and cross-platform mobile experiences designed around real customer and partner workflows.
+              </p>
+            </div>
+
+            {/* Pills */}
+            <div className="flex flex-wrap gap-2 pt-4 relative z-10">
+              {[
+                'React Native',
+                'Expo',
+                'TypeScript',
+                'JavaScript',
+                'Redux Toolkit',
+                'Zustand',
+                'Deep links',
+                'Push notifications',
+                'Store releases'
+              ].map((pill, idx) => (
+                <span
+                  key={idx}
+                  className="bg-[#22271e]/90 border border-[#31382b] text-[#cbd0c2] text-xs px-3.5 py-1.5 rounded-full font-mono shadow-sm"
+                >
+                  {pill}
+                </span>
               ))}
             </div>
           </div>
 
-          {/* Frontend Row 2 - Right */}
-          <div className="relative w-full overflow-hidden pause-hover py-2">
-            <div className="flex w-max animate-scroll-reverse">
-              {[...frontendRow2, ...frontendRow2, ...frontendRow2, ...frontendRow2].map((skill, index) => (
-                <SkillCard key={`f2-${index}`} name={skill.name} icon={skill.icon} />
+          {/* Card 02: Web (Soft Oatmeal Cream) */}
+          <div className="rounded-[2.5rem] bg-[#f3efe6] text-[#141612] p-8 sm:p-10 lg:p-12 relative overflow-hidden flex flex-col justify-between shadow-xl min-h-[400px] sm:min-h-[440px] group transition-all duration-300 hover:shadow-2xl">
+            <div>
+              <div className="text-xs font-mono tracking-widest text-[#71766a] uppercase mb-4 select-none">
+                02 / WEB & REACT INTERFACES
+              </div>
+
+              <h3 className="font-serif text-4xl sm:text-5xl text-[#141612] font-normal leading-[1.05] tracking-tight mb-4">
+                Fast, expressive interfaces
+              </h3>
+
+              <p className="font-sans text-xs sm:text-sm text-[#61665a] leading-relaxed mb-8 max-w-md">
+                Modern React single-page apps, Next.js web applications, and maintainable component systems built for conversion.
+              </p>
+            </div>
+
+            {/* Pills */}
+            <div className="flex flex-wrap gap-2 pt-4">
+              {[
+                'React.js',
+                'Next.js',
+                'TypeScript',
+                'Tailwind CSS',
+                'Redux / Zustand',
+                'JavaScript (ES6+)',
+                'SEO & Perf',
+                'Responsive Design'
+              ].map((pill, idx) => (
+                <span
+                  key={idx}
+                  className="bg-white/85 border border-[#ded8cb] text-[#4d5246] text-xs px-3.5 py-1.5 rounded-full font-mono shadow-sm"
+                >
+                  {pill}
+                </span>
               ))}
             </div>
           </div>
+
+          {/* Card 03: Systems (Vibrant Coral Red) */}
+          <div className="rounded-[2.5rem] bg-[#ff6b57] text-[#180905] p-8 sm:p-10 lg:p-12 relative overflow-hidden flex flex-col justify-between shadow-xl min-h-[400px] sm:min-h-[440px] group transition-all duration-300 hover:shadow-2xl">
+            <div>
+              <div className="text-xs font-mono tracking-widest text-[#731c11] uppercase font-bold mb-4 select-none">
+                03 / BACKEND & MERN SYSTEMS
+              </div>
+
+              <h3 className="font-serif text-4xl sm:text-5xl text-[#180905] font-normal leading-[1.05] tracking-tight mb-4">
+                MERN stack & backend systems
+              </h3>
+
+              <p className="font-sans text-xs sm:text-sm text-[#4a1710] leading-relaxed mb-8 max-w-md font-medium">
+                Complete MERN development: Node.js & Express.js server architectures, MongoDB document modelling with Mongoose, JWT authentication, and REST APIs that scale.
+              </p>
+            </div>
+
+            {/* Pills */}
+            <div className="flex flex-wrap gap-2 pt-4">
+              {[
+                'Node.js',
+                'Express.js',
+                'MongoDB',
+                'Mongoose ODM',
+                'React.js',
+                'REST APIs',
+                'JWT Auth',
+                'PostgreSQL',
+                'Supabase',
+                'RBAC'
+              ].map((pill, idx) => (
+                <span
+                  key={idx}
+                  className="bg-white/25 border border-white/40 text-[#1f0a06] text-xs font-semibold px-3.5 py-1.5 rounded-full font-mono shadow-sm"
+                >
+                  {pill}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Card 04: Delivery (Sky Blue with 4-Step Process) */}
+          <div className="rounded-[2.5rem] bg-[#8ebcfc] text-[#0b1f3b] p-8 sm:p-10 lg:p-12 relative overflow-hidden flex flex-col justify-between shadow-xl min-h-[400px] sm:min-h-[440px] group transition-all duration-300 hover:shadow-2xl">
+            <div>
+              <div className="text-xs font-mono tracking-widest text-[#153a6b] uppercase font-bold mb-4 select-none">
+                04 / DELIVERY
+              </div>
+
+              <h3 className="font-serif text-4xl sm:text-5xl text-[#0b1f3b] font-normal leading-[1.05] tracking-tight mb-6">
+                From question to handover
+              </h3>
+            </div>
+
+            {/* 4 Delivery Steps */}
+            <div className="space-y-0 border-t border-[#70abf7]/80 pt-1 mt-auto">
+              {[
+                { step: '01', title: 'Discover & scope' },
+                { step: '02', title: 'Design the journey' },
+                { step: '03', title: 'Build & integrate' },
+                { step: '04', title: 'Test, launch & document' }
+              ].map((item, idx) => (
+                <div
+                  key={idx}
+                  className="flex items-center gap-6 py-3.5 border-b border-[#70abf7]/70 text-xs sm:text-sm font-sans font-bold text-[#0b1f3b]"
+                >
+                  <span className="font-mono text-xs text-[#1e4882] font-semibold">
+                    {item.step}
+                  </span>
+                  <span>{item.title}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
         </div>
 
-        {/* Backend Section */}
-        <div className="flex flex-col space-y-4">
-          <div className="px-4 md:px-8 text-gray-900 dark:text-white font-bold text-lg tracking-wide uppercase mb-2 text-center md:text-left transition-colors duration-300">
-             Backend & Tools
-          </div>
-
-          {/* Backend Row 1 - Left */}
-          <div className="relative w-full overflow-hidden pause-hover py-2">
-            <div className="flex w-max animate-scroll ">
-              {[...backendRow1, ...backendRow1, ...backendRow1, ...backendRow1].map((skill, index) => (
-                <SkillCard key={`b1-${index}`} name={skill.name} icon={skill.icon} />
-              ))}
-            </div>
-          </div>
-
-          {/* Backend Row 2 - Right */}
-          <div className="relative w-full overflow-hidden pause-hover py-2">
-            <div className="flex w-max animate-scroll-reverse">
-              {[...backendRow2, ...backendRow2, ...backendRow2, ...backendRow2].map((skill, index) => (
-                <SkillCard key={`b2-${index}`} name={skill.name} icon={skill.icon} />
-              ))}
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

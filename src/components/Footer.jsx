@@ -1,116 +1,80 @@
 import React from 'react';
-import { Code2, Github, Linkedin, Mail, Heart } from 'lucide-react';
 
-const Footer = () => {
-  const currentYear = new Date().getFullYear();
-
+const Footer = ({ onOpenBlog }) => {
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (window.lenis) {
+      window.lenis.scrollTo(0, {
+        duration: 1.5,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        immediate: false,
+      });
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   };
 
   return (
-    <footer className="bg-gray-900 dark:bg-black text-white transition-colors duration-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Brand */}
-          <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <Code2 className="h-8 w-8 text-indigo-400 dark:text-yellow-500 transition-colors duration-300" />
-              <span className="text-xl font-bold">Pratik Jadhav</span>
-            </div>
-            <p className="text-gray-400 text-sm leading-relaxed">
-              Passionate fullstack developer specializing in MERN stack, 
-              creating digital experiences that make a difference.
-            </p>
-          </div>
+    <footer className="border-t border-[#201c18] bg-[#0c0a08] text-[#787268] py-7 relative z-10 select-none">
+      <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-14">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-4 text-[10.5px] sm:text-[11px] font-mono tracking-widest uppercase">
+          {/* Left Copyright */}
+          <div>© 2026 PRATIK JADHAV</div>
 
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4 text-white">Quick Links</h3>
-            <ul className="space-y-2">
-              {['Home', 'About', 'Skills', 'Projects', 'Contact'].map((item) => (
-                <li key={item}>
-                  <button
-                    onClick={() => {
-                      const element = document.getElementById(item.toLowerCase());
-                      if (element) {
-                        element.scrollIntoView({ behavior: 'smooth' });
-                      }
-                    }}
-                    className="text-gray-400 hover:text-white dark:hover:text-yellow-500 transition-colors text-sm"
-                  >
-                    {item}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Technologies */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4 text-white">Technologies</h3>
-            <ul className="space-y-2 text-gray-400 text-sm">
-              <li>React & JavaScript</li>
-              <li>Node.js & Express</li>
-              <li>MongoDB & Database</li>
-              <li>HTML5 & CSS3</li>
-              <li>Git & Version Control</li>
-            </ul>
-          </div>
-
-          {/* Contact Info */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4 text-white">Get In Touch</h3>
-            <div className="space-y-3">
-              <a
-                href="mailto:alex@example.com"
-                className="flex items-center space-x-2 text-gray-400 hover:text-white dark:hover:text-yellow-500 transition-colors text-sm"
-              >
-                <Mail className="h-4 w-4" />
-                <span>pratikjadhav6632@gmail.com</span>
-              </a>
-              <div className="flex space-x-4 pt-2">
-                <a
-                  href="https://github.com/pratikjadhav6632"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white dark:hover:text-yellow-500 transition-colors"
-                >
-                  <Github className="h-5 w-5" />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/pratik-jadhav--/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white dark:hover:text-yellow-500 transition-colors"
-                >
-                  <Linkedin className="h-5 w-5" />
-                </a>
-                <a
-                  href="mailto:pratikjadhav6632@gmail.com"
-                  className="text-gray-400 hover:text-white dark:hover:text-yellow-500 transition-colors"
-                >
-                  <Mail className="h-5 w-5" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="border-t border-gray-800 mt-8 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-gray-400 text-sm flex items-center">
-              © {currentYear} Pratik Jadhav. Made with
-              <Heart className="h-4 w-4 text-red-500 mx-1" />
-              by Pratik Jadhav
-            </p>
-            <button
-              onClick={scrollToTop}
-              className="text-gray-400 hover:text-white dark:hover:text-yellow-500 transition-colors text-sm"
+          {/* Center Quick Links */}
+          <nav aria-label="Footer Navigation" className="flex flex-wrap items-center justify-center gap-5 text-[#9c968b]">
+            <a
+              href="/blog"
+              onClick={(e) => {
+                if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0 && onOpenBlog) {
+                  e.preventDefault();
+                  onOpenBlog();
+                }
+              }}
+              className="hover:text-[#d4ff32] transition-colors"
             >
-              Back to top ↑
-            </button>
-          </div>
+              Blog
+            </a>
+            <a
+              href="https://github.com/pratikjadhav6632"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#d4ff32] transition-colors"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/jadhavpratik-/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#d4ff32] transition-colors"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://medium.com/@pratikjadhav6632"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#d4ff32] transition-colors"
+            >
+              Medium
+            </a>
+            <a
+              href="mailto:pratikjadhav6632@gmail.com"
+              className="hover:text-[#d4ff32] transition-colors"
+            >
+              Email
+            </a>
+          </nav>
+
+          {/* Right Back to top button */}
+          <button
+            type="button"
+            onClick={scrollToTop}
+            className="text-[#8e877a] hover:text-[#d4ff32] transition-colors cursor-pointer flex items-center gap-1 font-bold"
+          >
+            <span>BACK TO TOP</span>
+            <span>↑</span>
+          </button>
         </div>
       </div>
     </footer>

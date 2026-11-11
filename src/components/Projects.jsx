@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ExternalLink, Github, Eye, ArrowUpRight } from 'lucide-react';
+import { Github, ArrowUpRight, Code2 } from 'lucide-react';
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -10,18 +10,18 @@ const Projects = () => {
       title: 'Gaplify',
       description: 'Career development platform for students and freshers with skill gap analysis, personalized roadmaps, mentorship, and resource hub.',
       image: 'https://res.cloudinary.com/dgxzpenl5/image/upload/v1753988400/Screenshot_2025-08-01_002909_zykpoa.png',
-      technologies: ['MongoDB','Express', 'React.js','Node.js'],
-      category: 'FullStack',
+      technologies: ['MongoDB', 'Express', 'React.js', 'Node.js'],
+      category: 'fullstack',
       githubUrl: 'https://github.com/pratikjadhav6632/Gaplify',
       featured: true,
       liveUrl: 'https://www.gaplify.in'
     },
     {
       id: 2,
-      title: 'Foundrr product website',
+      title: 'Foundrr Product Website',
       description: 'A clean and informative landing page showcasing the Foundrr mobile app, featuring download links and essential company details for users to explore with ease.',
       image: 'https://res.cloudinary.com/dgxzpenl5/image/upload/v1766330686/Screenshot_2025-12-21_205056_m9wahg.png',
-      technologies: ['HTML', 'CSS','React.js','Tailwind CSS'],
+      technologies: ['HTML', 'CSS', 'React.js', 'Tailwind CSS'],
       category: 'frontend',
       githubUrl: 'https://github.com/pratikjadhav6632/foundrr-waiting-list',
       liveUrl: 'https://www.foundrr.co/',
@@ -30,10 +30,10 @@ const Projects = () => {
     {
       id: 3,
       title: 'Foundrr Mobile Application',
-      description: 'Foundrr is a streamlined platform designed to help users discover, track, and manage opportunities with ease. The app delivers a clean interface, fast navigation, and smart features to enhance productivity and support growth.”',
+      description: 'Foundrr is a streamlined platform designed to help users discover, track, and manage opportunities with ease. The app delivers a clean interface, fast navigation, and smart features.',
       image: 'https://res.cloudinary.com/dgxzpenl5/image/upload/v1770179584/Screenshot_2026-02-04_100037_zpixoh.png',
-      technologies: ['React Native', 'CSS','Tailwind CSS','node.js','expo','express.js','mongodb'],
-      category: 'Mobile Application',
+      technologies: ['React Native', 'Expo', 'Node.js', 'Express.js', 'MongoDB'],
+      category: 'mobile',
       githubUrl: 'https://github.com/pratikjadhav6632/Foundrr_Applciation',
       liveUrl: 'https://www.foundrr.co/',
       featured: true
@@ -41,76 +41,62 @@ const Projects = () => {
     {
       id: 4,
       title: 'Jotiba Construction Portfolio',
-      description: 'A responsive portfolio website for Jotiba Construction showcasing their services, projects, and contact information.',
+      description: 'A responsive portfolio website for Jotiba Construction showcasing their services, civil engineering projects, and contact information.',
       image: 'https://res.cloudinary.com/dgxzpenl5/image/upload/v1766330694/Screenshot_2025-12-21_205428_jiumcs.png',
-      technologies: ['React.js', 'CSS','Tailwind CSS','TypeScript'],
+      technologies: ['React.js', 'Tailwind CSS', 'TypeScript'],
       category: 'frontend',
       githubUrl: 'https://github.com/pratikjadhav6632/jotiba-construction',
       liveUrl: 'https://jotiba-construction.vercel.app/',
-      Ongoing: true
+      ongoing: true
     },
     {
       id: 5,
       title: 'SMB Rise Digital Portfolio',
-      description: 'A responsive portfolio website for SMB Rise Digital (Ireland) showcasing their services, Blogs, and contact information, Admin panel for tracking and adding new blogs',
+      description: 'A responsive portfolio website for SMB Rise Digital (Ireland) showcasing services, blogs, and an admin panel for dynamic blog tracking.',
       image: 'https://res.cloudinary.com/dgxzpenl5/image/upload/v1770179918/Screenshot_2026-02-04_100820_qh5afu.png',
-      technologies: ['Next.js', 'CSS','Tailwind CSS','MongoDB','node.js','Express.js','SEO'],
-      category: 'Fullstack',
+      technologies: ['Next.js', 'MongoDB', 'Node.js', 'Express.js', 'SEO'],
+      category: 'fullstack',
       githubUrl: 'https://github.com/pratikjadhav6632/SMB-media',
       liveUrl: 'https://smb-media.vercel.app/',
-      Ongoing: true
+      ongoing: true
     },
     {
       id: 6,
       title: 'Foundrr MVP',
       description: 'Full-stack networking platform for entrepreneurs with real-time chat, co-founder matching, user authentication, and Appwrite backend integration.',
       image: 'https://res.cloudinary.com/dgxzpenl5/image/upload/v1753551335/Screenshot_2025-07-26_230313_ji4vn3.png',
-      technologies: ['React', 'Typescript', 'Appwrite', 'Tailwind CSS'],
+      technologies: ['React', 'TypeScript', 'Appwrite', 'Tailwind CSS'],
       category: 'fullstack',
       githubUrl: 'https://github.com/pratikjadhav6632/Foundrr',
-      liveUrl: 'https://foundrr-alpha.vercel.app/',
-     
+      liveUrl: 'https://foundrr-alpha.vercel.app/'
     },
     {
       id: 7,
       title: 'WonderNest',
-      description: 'Full-stack hotel and room listing platform with CRUD operations, user reviews, and dynamic property viewing.',
+      description: 'Full-stack hotel and room listing platform with complete CRUD operations, user reviews, and dynamic property booking workflow.',
       image: 'https://res.cloudinary.com/dgxzpenl5/image/upload/v1753551851/Screenshot_2025-07-26_231352_ppuck9.png',
-      technologies: ['EJS', 'Node.js', 'MongoDB', 'Express','Bootstrap'],
+      technologies: ['EJS', 'Node.js', 'MongoDB', 'Express', 'Bootstrap'],
       category: 'fullstack',
       githubUrl: 'https://github.com/pratikjadhav6632/WonderNest',
-      liveUrl: 'https://wondernest-zi50.onrender.com/',
-     
+      liveUrl: 'https://wondernest-zi50.onrender.com/'
     },
-    
     {
       id: 8,
-      title: 'Portfolio Website',
-      description: 'Responsive portfolio website with smooth animations, contact forms, and modern design.',
-      image: 'https://res.cloudinary.com/dgxzpenl5/image/upload/v1766330686/Screenshot_2025-12-21_205136_kkxerp.png',
-      technologies: ['React', 'Tailwind CSS', 'JavaScript'],
-      category: 'frontend',
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://pratik-jadhav-portfolio.netlify.app/'
-    },
-    {
-      id: 9,
       title: 'Foundrr Waiting List',
-      description: 'Foundrr offers a clean, interactive way for users to join the waiting list through a simple form. Built with React and Tailwind, it delivers a smooth and modern experience.',
+      description: 'Interactive waiting list portal with custom form validation and instant feedback built with React and Tailwind.',
       image: 'https://res.cloudinary.com/dgxzpenl5/image/upload/v1766330687/Screenshot_2025-12-21_205410_mrvsu4.png',
-      technologies: ['HTML', 'CSS','React.js','Tailwind CSS'],
+      technologies: ['React.js', 'Tailwind CSS', 'Vite'],
       category: 'frontend',
       githubUrl: 'https://github.com/pratikjadhav6632/foundrr-waiting',
-      liveUrl: 'https://foundrr-waiting.vercel.app/',
-      
-    },
+      liveUrl: 'https://foundrr-waiting.vercel.app/'
+    }
   ];
 
   const filters = [
     { key: 'all', label: 'All Projects' },
     { key: 'fullstack', label: 'Full Stack' },
     { key: 'frontend', label: 'Frontend' },
-    {key:'Mobile Application',label:'Mobile Application'}
+    { key: 'mobile', label: 'Mobile Apps' }
   ];
 
   const filteredProjects = activeFilter === 'all' 
@@ -118,57 +104,60 @@ const Projects = () => {
     : projects.filter(project => project.category === activeFilter);
 
   const ProjectCard = ({ project }) => (
-    <div className="group bg-white dark:bg-gray-900 rounded-2xl border border-gray-100 dark:border-gray-800 overflow-hidden hover:shadow-xl hover:border-indigo-100 dark:hover:border-yellow-900/50 transition-all duration-300 flex flex-col h-full">
+    <div className="group bg-[#141612] rounded-[1.75rem] border border-[#242820] hover:border-[#3a4132] hover:bg-[#181a15] overflow-hidden transition-all duration-200 flex flex-col h-full hover:shadow-2xl hover:shadow-black/60">
       {/* Image Section */}
-      <div className="relative h-52 overflow-hidden bg-gray-50 dark:bg-gray-800">
-        <div className="absolute inset-0 bg-indigo-900/5 dark:bg-black/40 group-hover:bg-transparent transition-colors duration-300 z-10"></div>
+      <div className="relative h-56 overflow-hidden bg-[#181b15] border-b border-[#20241b]">
         <img
           src={project.image}
           alt={project.title}
-          className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+          className="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-700 ease-out filter brightness-95"
         />
-        
+        <div className="absolute inset-0 bg-gradient-to-t from-[#141612] via-transparent to-black/20 pointer-events-none" />
+
         {/* Badges */}
-        <div className="absolute top-4 right-4 z-20 flex flex-col gap-2">
+        <div className="absolute top-4 right-4 z-20 flex flex-wrap gap-2">
           {project.featured && (
-            <span className="bg-indigo-600/90 dark:bg-yellow-500/90 backdrop-blur-sm text-white dark:text-gray-900 px-3 py-1 rounded-full text-xs font-semibold shadow-sm">
+            <span className="bg-[#d4ff32] text-neutral-950 px-3 py-1 rounded-full text-[11px] font-black uppercase tracking-tight shadow-md">
               Featured
             </span>
           )}
-          {project.Ongoing && (
-            <span className="bg-amber-500/90 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-semibold shadow-sm">
-              Ongoing
+          {project.ongoing && (
+            <span className="bg-[#ff6b57] text-white px-3 py-1 rounded-full text-[11px] font-black uppercase tracking-tight shadow-md">
+              Active
             </span>
           )}
         </div>
       </div>
       
       {/* Content Section */}
-      <div className="p-6 flex flex-col flex-grow">
-        <div className="flex justify-between items-start mb-3">
-          <h3 className="text-xl font-bold text-gray-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-yellow-500 transition-colors">
+      <div className="p-6 sm:p-7 flex flex-col flex-grow">
+        <div className="flex justify-between items-start mb-3 gap-2">
+          <h3 className="text-xl sm:text-2xl font-serif text-white font-normal group-hover:text-[#d4ff32] transition-colors">
             {project.title}
           </h3>
-          <a
-            href={project.liveUrl || project.githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 hover:text-indigo-600 dark:hover:text-yellow-500 transition-colors"
-          >
-            <ArrowUpRight className="h-5 w-5" />
-          </a>
+          {project.liveUrl && (
+            <a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-neutral-400 hover:text-white p-1 rounded-full hover:bg-[#20241b] transition-colors"
+              aria-label="Open live site"
+            >
+              <ArrowUpRight className="h-5 w-5" />
+            </a>
+          )}
         </div>
 
-        <p className="text-gray-600 dark:text-gray-400 text-sm mb-6 leading-relaxed flex-grow">
+        <p className="text-neutral-400 text-xs sm:text-sm mb-6 leading-relaxed flex-grow font-sans">
           {project.description}
         </p>
         
         {/* Technologies */}
-        <div className="flex flex-wrap gap-2 mb-6">
+        <div className="flex flex-wrap gap-1.5 mb-6">
           {project.technologies.map((tech, index) => (
             <span
               key={index}
-              className="px-3 py-1 bg-indigo-50 dark:bg-yellow-900/20 text-indigo-700 dark:text-yellow-400 rounded-full text-xs font-medium border border-indigo-100 dark:border-yellow-900/30"
+              className="px-3 py-1 bg-[#1a1c17] text-neutral-300 rounded-full text-[11px] font-mono border border-[#272c21]"
             >
               {tech}
             </span>
@@ -176,25 +165,25 @@ const Projects = () => {
         </div>
         
         {/* Action Buttons */}
-        <div className="flex items-center gap-3 mt-auto pt-4 border-t border-gray-50 dark:border-gray-800">
+        <div className="flex items-center gap-3 mt-auto pt-4 border-t border-[#20241c]">
           <a
             href={project.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-gray-50 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors text-sm font-medium group/btn"
+            className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 bg-[#1a1d16] hover:bg-[#22271e] text-neutral-300 hover:text-white rounded-full transition-all text-xs font-semibold border border-[#2b3124]"
           >
-            <Github className="h-4 w-4 text-gray-500 dark:text-gray-400 group-hover/btn:text-gray-900 dark:group-hover/btn:text-white" />
-            Code
+            <Github className="h-3.5 w-3.5" />
+            <span>Source Code</span>
           </a>
           {project.liveUrl && (
             <a
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-indigo-600 dark:bg-yellow-500 text-white dark:text-gray-900 rounded-lg hover:bg-indigo-700 dark:hover:bg-yellow-400 hover:shadow-md transition-all text-sm font-medium"
+              className="flex-1 flex items-center justify-center gap-1.5 px-4 py-2.5 bg-[#d4ff32] hover:bg-[#c2ed23] text-neutral-950 rounded-full transition-all text-xs font-bold shadow-md shadow-[#d4ff32]/10"
             >
-              <Eye className="h-4 w-4" />
-              Live Demo
+              <span>Live Demo</span>
+              <ArrowUpRight className="h-3.5 w-3.5" />
             </a>
           )}
         </div>
@@ -203,28 +192,35 @@ const Projects = () => {
   );
 
   return (
-    <section id="projects" className="py-24 bg-gray-50/50 dark:bg-gray-950 transition-colors duration-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 transition-colors duration-300">
-            Featured <span className="text-indigo-600 dark:text-yellow-500 transition-colors duration-300">Projects</span>
-          </h2>
-          <div className="w-24 h-1.5 bg-indigo-600 dark:bg-yellow-500 mx-auto rounded-full mb-6 transition-colors duration-300"></div>
-          <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed transition-colors duration-300">
-            A showcase of my recent work, side projects, and open source contributions.
+    <section id="projects" className="py-24 bg-[#0e100c] text-[#f4f3ea] relative overflow-hidden border-t border-[#1d2119]">
+      <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-14">
+        {/* Section Header */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 pb-6 border-b border-[#22261e]">
+          <div>
+            <div className="flex items-center gap-2 text-xs font-mono tracking-widest uppercase text-neutral-400 mb-3">
+              <span className="text-[#d4ff32] font-bold">04</span>
+              <span className="text-neutral-600">/</span>
+              <span>SELECTED WORK</span>
+            </div>
+            <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-white font-normal tracking-tight">
+              Featured <span className="italic text-[#d4ff32]">Projects</span>
+            </h2>
+          </div>
+          <p className="text-neutral-400 text-sm sm:text-base max-w-md mt-4 md:mt-0 font-sans leading-relaxed">
+            Real products shipped to production with clean architecture and modern stacks.
           </p>
         </div>
 
         {/* Filter Buttons */}
-        <div className="flex flex-wrap justify-center gap-3 mb-12">
+        <div className="flex flex-wrap items-center gap-2.5 mb-12">
           {filters.map((filter) => (
             <button
               key={filter.key}
               onClick={() => setActiveFilter(filter.key)}
-              className={`px-6 py-2.5 rounded-full font-medium transition-all duration-300 ${
+              className={`px-5 py-2 rounded-full text-xs font-mono tracking-wider transition-all duration-200 uppercase ${
                 activeFilter === filter.key
-                  ? 'bg-indigo-600 dark:bg-yellow-500 text-white dark:text-gray-900 shadow-lg scale-105'
-                  : 'bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800 border border-gray-200 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-700'
+                  ? 'bg-[#d4ff32] text-neutral-950 font-bold shadow-md shadow-[#d4ff32]/10'
+                  : 'bg-[#141612] text-neutral-400 hover:text-white border border-[#242820] hover:border-[#3a4132]'
               }`}
             >
               {filter.label}
@@ -233,20 +229,14 @@ const Projects = () => {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {filteredProjects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
         </div>
-
-        {filteredProjects.length === 0 && (
-          <div className="text-center py-20 bg-white dark:bg-gray-900 rounded-3xl border border-gray-100 dark:border-gray-800 shadow-sm transition-colors duration-300">
-            <p className="text-gray-500 dark:text-gray-400 text-lg">No projects found for the selected filter.</p>
-          </div>
-        )}
       </div>
     </section>
   );
 };
 
-export default Projects;
+export default Projects;

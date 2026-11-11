@@ -1,0 +1,90 @@
+# Pratik Jadhav (Pratik Dattatray Jadhav) — Software Developer Portfolio
+
+> Software Developer with 1.5+ years of hands-on production experience in MERN Stack (React.js, Node.js, Express.js, MongoDB), React Native, Redis caching, and end-to-end SaaS architecture. Based in Pune, India (working across Remote, On-Site, and Worldwide teams). Open to both Full-Time Software Developer / Full-Stack Engineer roles and selective Freelance / MVP product engagements.
+
+## Quick Profile & Availability
+- Name: Pratik Jadhav (Pratik Dattatray Jadhav)
+- Role: Software Developer — Full-Stack Web (MERN) & React Native Engineer
+- Experience: 1.5+ Years shipping production SaaS, mobile, and client systems
+- Availability: Open to Full-Time Software Engineer / SDE roles (Remote & On-Site) AND Freelance Web, SaaS MVP & Mobile App builds
+- Location: Pune, Maharashtra, India
+- Website: https://pratik-jadhav-portfolio.netlify.app/
+- Email: pratikjadhav6632@gmail.com
+- Phone: +91 8408868107
+- Résumé: https://drive.google.com/file/d/1z41RRcAXd8IOUQFGXIIUZGlMrw-0Ksdb/view?usp=sharing
+- GitHub: https://github.com/pratikjadhav6632
+- LinkedIn: https://www.linkedin.com/in/jadhavpratik-/
+- Medium: https://medium.com/@pratikjadhav6632
+
+## Work Experience & Product Partners
+- SSWW / QuirGo (Current): Full-Stack Software Developer contributing to QuirGO, an all-in-one multi-tenant SaaS platform covering HRM, CRM, Finance, and Project Management adopted by 38 organizations. Also associated with TkInfotech.
+- Foundrr (Ex-Company): Built and shipped web and React Native / Expo Android experiences for a startup founder networking platform.
+- QuantumItGurus (Freelance Client): Delivered business web development and custom CRM / lead management workflows.
+- Gaplify (Founder / Builder): Built and launched an independent EdTech mentorship platform connecting learners with mentors.
+
+## Verifiable Engineering Achievements
+- SaaS Production Scale (QuirGO): Helped power 38 organizations across HRM, CRM, Finance, and Project Management modules.
+- Backend Performance Optimization: Cut API response latency from ~5 seconds down to 790 milliseconds (~84% latency reduction) using Redis caching and targeted database indexing.
+- National Innovation Recognition (Avishkar Bharat): Gold Medal winner, Special Achievement Trophy recipient, and holder of 13 university-level innovation certificates.
+- EdTech Traction (Gaplify): Onboarded 115+ students and 10+ mentors on an independently built full-stack web platform.
+
+## Technical Skills
+- Frontend: React.js, Next.js, Tailwind CSS, JavaScript (ES6+), TypeScript, HTML5/CSS3, EJS
+- Mobile: React Native, Expo, Android Builds
+- Backend & APIs: Node.js, Express.js, REST APIs, JWT Authentication, Payment Gateway Integration (PhonePe, Razorpay), LiveKit
+- Databases & Caching: MongoDB, PostgreSQL, Redis, Database Indexing, Query Optimization
+- AI & Tooling: OpenAI API, Embeddings, Vector Databases, Git, GitHub, Postman, Vite, Netlify
+
+## Freelance & Consulting Services
+- Full-Stack Web Applications & Custom Dashboards (MERN Stack / Next.js)
+- Multi-Tenant SaaS MVP Architecture & Production Launches
+- Cross-Platform Mobile App Development (React Native / Expo Android)
+- Backend Performance Auditing, Redis Caching & Database Optimization
+- Indian & Global Payment Gateway Integrations (PhonePe, webhooks, idempotency)
+
+## Shipped Projects (9)
+01. Gaplify — Live EdTech Mentorship Platform
+    - URL: https://www.gaplify.in | Repo: https://github.com/pratikjadhav6632/Gaplify
+    - Stack: React.js, Node.js, Express, MongoDB
+    - Impact: 115+ students and 10+ mentors onboarded.
+02. MIRA — Personal AI Companion Exploring Conversational Intelligence & Persistent Memory
+    - Category: Personal AI Project · Evolving
+    - Stack: OpenAI API, Node.js, React, Embeddings, Vector Databases, AI Systems
+    - Summary: Combines conversational AI, chat and voice interactions, and contextual memory / information retrieval ("Your conversations. Your memories. Your AI.").
+03. QuirGO — All-in-One SaaS Suite (HRM, CRM, Finance, Project Management)
+    - URL: https://quirgo.com
+    - Impact: Used by 38 organizations; ~5s to 790ms latency reduction (~84%) via Redis caching & indexing.
+04. WonderNest — Hotel Discovery & Booking Web Application
+    - Stack: Node.js, Express.js, MongoDB, EJS
+05. Foundrr — Startup Networking Android App
+    - URL: https://www.foundrr.co/ | Repo: https://github.com/pratikjadhav6632/Foundrr_Applciation
+    - Stack: React Native, Expo, Node.js, Express.js, MongoDB
+06. Jotiba Constructions — Responsive Business Website
+    - Stack: Web Development, Responsive UI
+07. CollegeSphere — Internal Workflow & Automation Software (NMiet LC)
+    - Stack: Full Stack, Workflow Automation, Internal Tools
+08. QuantumITGurus — Client Website & Custom CRM Lead Management
+    - Stack: Web Development, CRM, Lead Management
+09. Oshni — Product Showcase Website for Traditional Siddha Wellness Products
+    - Stack: Web Development, Product Showcase
+
+## Engineering Articles & Technical Writing
+- Blog Index: https://pratik-jadhav-portfolio.netlify.app/blog
+1. System Design 101: 14 Core Components Every Developer Should Understand
+   - Portfolio URL: https://pratik-jadhav-portfolio.netlify.app/blog/system-design-101-14-core-components
+   - Medium URL: https://medium.com/@pratikjadhav6632/system-design-101-14-core-components-every-developer-should-understand-358a41e8259a
+2. 4 Brutal Realities Every SaaS Founder Faces (That Nobody Talks About)
+   - Portfolio URL: https://pratik-jadhav-portfolio.netlify.app/blog/4-brutal-realities-every-saas-founder-faces
+   - Medium URL: https://medium.com/@pratikjadhav6632/4-brutal-realities-every-saas-founder-faces-that-nobody-talks-about-39e7a2ee938f
+3. I Built a Production Backend App in 3 Days — What Actually Happened
+   - Portfolio URL: https://pratik-jadhav-portfolio.netlify.app/blog/production-backend-app-in-3-days
+   - Medium URL: https://medium.com/@pratikjadhav6632/i-built-a-production-backend-app-in-3-days-heres-what-actually-happened-cc5fb4357e16
+4. How to Integrate PhonePe Payment Gateway in Node.js (Complete Developer Guide 2025)
+   - Portfolio URL: https://pratik-jadhav-portfolio.netlify.app/blog/phonepe-payment-gateway-nodejs-guide
+   - Medium URL: https://medium.com/@pratikjadhav6632/how-to-integrate-phonepe-payment-gateway-in-node-js-complete-developer-guide-2025-a519f89613e5
+5. The Exact Code & System Behind 50% Faster Delivery and 300% Client Retention
+   - Portfolio URL: https://pratik-jadhav-portfolio.netlify.app/blog/exact-code-and-system-faster-delivery-client-retention
+   - Medium URL: https://medium.com/@pratikjadhav6632/the-exact-code-system-behind-50-faster-delivery-and-300-client-retention-458290987443
+6. Why Nobody Wants Your "All-in-One" Product (And What They Actually Buy)
+   - Portfolio URL: https://pratik-jadhav-portfolio.netlify.app/blog/why-nobody-wants-your-all-in-one-product
+   - Medium URL: https://medium.com/@pratikjadhav6632/why-nobody-wants-your-all-in-one-product-and-what-they-actually-buy-a04825d957f8

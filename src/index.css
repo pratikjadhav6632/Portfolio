@@ -60,6 +60,10 @@
   animation: orbit-spin 14s linear infinite;
 }
 
+.animate-orbit-spin-reverse {
+  animation: orbit-spin 10s linear infinite reverse;
+}
+
 @keyframes halo-pulse {
   0% {
     transform: scale(0.98);
@@ -159,6 +163,7 @@ body {
   .animate-modal-pop,
   .animate-avatar-float,
   .animate-orbit-spin,
+  .animate-orbit-spin-reverse,
   .animate-halo-pulse {
     animation: none !important;
   }

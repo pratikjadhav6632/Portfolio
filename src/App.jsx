@@ -11,6 +11,7 @@ import BlogTeaser from './components/BlogTeaser';
 import Contact from './components/Contact';
 import Blog from './components/Blog';
 import Footer from './components/Footer';
+import PageLoader from './components/PageLoader';
 
 const HOME_SECTION_HASHES = ['#home', '#about', '#work', '#skills', '#proof', '#writing', '#contact'];
 
@@ -149,6 +150,8 @@ function App() {
 
   return (
     <div className="App relative min-h-screen bg-[#0d0f0c] text-[#f4f3ea] selection:bg-[#d4ff32] selection:text-black">
+      <PageLoader />
+
       {/* Fixed Nav Header (Constant on all pages) */}
       <Header currentPage={route.page} onNavigate={handleNavigate} />
 

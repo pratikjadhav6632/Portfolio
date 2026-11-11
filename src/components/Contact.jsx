@@ -4,7 +4,7 @@ import { ArrowUpRight, ArrowDown, Check, Copy, Send } from 'lucide-react';
 
 const CONTACT_EMAIL = 'pratikjadhav6632@gmail.com';
 
-const INQUIRY_TYPES = ['Full-Time Role', 'Freelance Project', 'Collaboration'];
+const INQUIRY_TYPES = ['Freelance Project', 'Collaboration'];
 
 const INITIAL_FORM = {
   inquiryType: 'Full-Time Role',
@@ -41,25 +41,30 @@ const Contact = () => {
       return;
     }
 
-    const detailLines = [
-      `Inquiry Type: ${formData.inquiryType}`,
-      trimmedCompany ? `Company: ${trimmedCompany}` : null,
-      trimmedPhone ? `Phone / WhatsApp: ${trimmedPhone}` : null,
-      trimmedSubject ? `Subject: ${trimmedSubject}` : null,
-    ].filter(Boolean);
-
-    const formattedMessage = `${detailLines.join('\n')}\n\n${trimmedMessage}`;
     const emailSubject = trimmedSubject
       ? `[${formData.inquiryType}] ${trimmedSubject} — ${trimmedName}`
       : `[${formData.inquiryType}] Portfolio Inquiry from ${trimmedName}`;
+
+    const structuredMessage = [
+      `Inquiry Type: ${formData.inquiryType}`,
+      `Name: ${trimmedName}`,
+      `Email: ${trimmedEmail}`,
+      `Company / Organization: ${trimmedCompany || 'Not provided'}`,
+      `Phone / WhatsApp: ${trimmedPhone || 'Not provided'}`,
+      `Subject: ${trimmedSubject || 'General Portfolio Inquiry'}`,
+      '',
+      'Message:',
+      trimmedMessage,
+    ].join('\n');
 
     const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
     const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
     const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
+    setStatus({ type: 'sending', text: 'Sending message...' });
+
     if (serviceId && templateId && publicKey) {
       try {
-        setStatus({ type: 'sending', text: 'Sending message...' });
         await emailjs.send(
           serviceId,
           templateId,
@@ -67,11 +72,12 @@ const Contact = () => {
             from_name: trimmedName,
             from_email: trimmedEmail,
             reply_to: trimmedEmail,
+            to_email: CONTACT_EMAIL,
             inquiry_type: formData.inquiryType,
             company: trimmedCompany || 'Not provided',
             phone: trimmedPhone || 'Not provided',
             subject: emailSubject,
-            message: formattedMessage,
+            message: structuredMessage,
           },
           publicKey
         );
@@ -80,25 +86,49 @@ const Contact = () => {
           type: 'success',
           text: 'Message sent! I will get back to you shortly.',
         });
+        return;
       } catch {
-        setStatus({
-          type: 'error',
-          text: `Could not send directly. Please email ${CONTACT_EMAIL} directly.`,
-        });
+        // Fall through to FormSubmit AJAX endpoint instead of opening an external email client
       }
-      return;
     }
 
-    // Fallback: open pre-filled email draft cleanly when EmailJS env vars aren't configured
-    const subject = encodeURIComponent(emailSubject);
-    const body = encodeURIComponent(
-      `Name: ${trimmedName}\nEmail: ${trimmedEmail}\n${formattedMessage}`
-    );
-    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
-    setStatus({
-      type: 'success',
-      text: 'Opening your email app with your pre-filled message.',
-    });
+    try {
+      const response = await fetch(`https://formsubmit.co/ajax/${CONTACT_EMAIL}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          _subject: emailSubject,
+          _replyto: trimmedEmail,
+          _template: 'table',
+          'Inquiry Type': formData.inquiryType,
+          Name: trimmedName,
+          Email: trimmedEmail,
+          'Company / Organization': trimmedCompany || 'Not provided',
+          'Phone / WhatsApp': trimmedPhone || 'Not provided',
+          Subject: trimmedSubject || 'General Portfolio Inquiry',
+          Message: trimmedMessage,
+        }),
+      });
+
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok || result.success === 'false' || result.success === false) {
+        throw new Error('Delivery failed');
+      }
+
+      setFormData(INITIAL_FORM);
+      setStatus({
+        type: 'success',
+        text: 'Message sent! I will get back to you shortly.',
+      });
+    } catch {
+      setStatus({
+        type: 'error',
+        text: `Could not send directly right now. Please email ${CONTACT_EMAIL} directly.`,
+      });
+    }
   };
 
   return (
@@ -190,11 +220,10 @@ const Contact = () => {
                         key={type}
                         type="button"
                         onClick={() => setFormData((prev) => ({ ...prev, inquiryType: type }))}
-                        className={`px-3.5 py-1.5 rounded-full text-[11px] font-mono uppercase tracking-wider border transition-colors cursor-pointer ${
-                          isSelected
+                        className={`px-3.5 py-1.5 rounded-full text-[11px] font-mono uppercase tracking-wider border transition-colors cursor-pointer ${isSelected
                             ? 'bg-[#d4ff32]/15 border-[#d4ff32] text-[#d4ff32] font-semibold'
                             : 'bg-[#12100d] border-[#2c251f] text-[#9b9388] hover:border-[#493e35] hover:text-white'
-                        }`}
+                          }`}
                       >
                         {type}
                       </button>
